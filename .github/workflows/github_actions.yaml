@@ -1,4 +1,4 @@
-name: Deploy Bucket S3 with boto3
+name: Deploy Bucket S3 with boto3!
 
 on:
   push:
