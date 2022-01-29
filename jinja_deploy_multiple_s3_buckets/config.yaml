@@ -1,12 +1,12 @@
 buckets:
-  - name: bucket-1-phtf
+  - name: bucket1phtf
     SSEAlgorithm: AES256
     BlockPublicAcls: True
     BlockPublicPolicy: True
     IgnorePublicAcls: True
     RestrictPublicBuckets: True
 
-  - name: bucket-2-phtf
+  - name: bucket2phtf
     SSEAlgorithm: AES256
     BlockPublicAcls: False
     BlockPublicPolicy: False
