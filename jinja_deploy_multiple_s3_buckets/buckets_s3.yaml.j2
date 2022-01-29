@@ -1,0 +1,18 @@
+Description: Creates several s3 buckets
+
+Resources:
+  {% for bucket in buckets %}
+    {{ bucket.name }}:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: {{ bucket.name }}
+        BucketEncryption:
+          ServerSideEncryptionConfiguration:
+            - ServerSideEncryptionByDefault:
+                SSEAlgorithm: {{ bucket.SSEAlgorithm }}
+        PublicAccessBlockConfiguration:
+          BlockPublicAcls: {{ bucket.BlockPublicAcls }}
+          BlockPublicPolicy: {{ bucket.BlockPublicPolicy }}
+          IgnorePublicAcls: {{ bucket.IgnorePublicAcls }}
+          RestrictPublicBuckets: {{ bucket.RestrictPublicBuckets }}
+  {% endfor %}
