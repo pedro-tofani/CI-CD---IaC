@@ -79,7 +79,7 @@ def _get_abs_path(path):
 def create_or_update_stack():
     """[Function responsible for creating or updating the stack in AWS]
     """
-    stack_name = "s3_buckets"
+    stack_name = "s3Buckets"
     with open(_get_abs_path('buckets_s3.yaml')) as f:
         template_body = f.read()
 
