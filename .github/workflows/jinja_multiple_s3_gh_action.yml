@@ -1,4 +1,4 @@
-name: Deploy multiples S3 buckets using jinja for templating
+name: Deploy multiples S3 buckets using jinja for templating!
 
 on:
   push:
