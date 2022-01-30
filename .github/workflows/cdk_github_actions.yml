@@ -1,4 +1,4 @@
-name: Deploy S3 bucket
+name: Deploy S3 bucket!
 
 on:
   push:
